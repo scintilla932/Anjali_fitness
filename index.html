@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /*CSS Reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/myBg.jpg');
+            color: whitesmoke;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+
+        .left img {
+            padding: 0px 43px;
+            width: 106px;
+            filter: invert(100%);
+            /* Inverts the color of an image.  */
+        }
+
+        .left div {
+            font-size: 26px;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 36%;
+            margin: 29px auto;
+            /* border: 2px solid green; */
+        }
+
+        .navbar {
+            display: inline-block;
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 34px 23px;
+            /* margin: 3px 3px; */
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(179, 179, 179);
+            text-decoration: underline;
+        }
+
+        .right {
+
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            /* border: 2px solid yellow; */
+        }
+        .btn{
+            margin:0px 9px;
+            background-color: black;
+            color: whitesmoke;
+            font-size: 20px;
+            font-family: 'Baloo 2', cursive;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(51, 48, 48);
+        }
+        .container{
+            border: 2px solid rgb(255, 255, 255);
+            margin: 106px 80px;
+            padding: 75px;
+            border-radius: 20px;
+            width: 33%;
+        }
+        .form-group input{
+            font-family: 'Baloo 2', cursive;
+            text-align: center;
+            font-size: 25px;
+            display: block;
+            width: 77%;
+            margin: 11px auto;
+            padding: 1px;
+            border-radius: 8px;
+        }
+        .container button{
+            display: block;
+            width: 77%;
+            margin: 20px auto;
+
+        }
+        .container h1{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/Logo.png" alt="Logo">
+            <div>
+                Anjali Fitness
+            </div>
+        </div>
+        <!-- Mid box for navbar. -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Kolkata now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
